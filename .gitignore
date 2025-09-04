@@ -1,0 +1,6 @@
+*.pyc
+__pycache__
+Test/*.png
+log/2*
+log/K*
+log/M*
