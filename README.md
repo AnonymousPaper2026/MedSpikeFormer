@@ -15,7 +15,7 @@ Spiking self-attention (SSA) has emerged as a promising approach for medical ima
 ## 🚀 Introduction
 
 <div align="center">
-    <img width="400" alt="image" src="figures/challenge.png?raw=true">
+    <img width="400" alt="image" src="Test/figures/challenge.png?raw=true">
 </div>
 
 The challenges: the misleading co-occurrence of salient and non-salient objects. SA is ANN-based self-attention and SSA denotes spike self-attention.
@@ -23,7 +23,7 @@ The challenges: the misleading co-occurrence of salient and non-salient objects.
 ## 📻 Overview
 
 <div align="center">
-<img width="800" alt="image" src="figures/network.png?raw=true">
+<img width="800" alt="image" src="Test/figures/network.png?raw=true">
 </div>
 
 Illustration of the overall architecture.
@@ -54,7 +54,7 @@ pip install scikit-learn matplotlib thop h5py SimpleITK scikit-image medpy yacs 
 - Download datasets: ISIC2018 from this [link](https://challenge.isic-archive.com/data/#2018), Kvasir from this[link](https://link.zhihu.com/?target=https%3A//datasets.simula.no/downloads/kvasir-seg.zip), BUSI from this [link](https://scholar.cu.edu.eg/?q=afahmy/pages/dataset), Moun-Seg from this [link](https://www.kaggle.com/datasets/tuanledinh/monuseg2018), and COVID-19 from this [link](https://drive.usercontent.google.com/download?id=1FHx0Cqkq9iYjEMN3Ldm9FnZ4Vr1u3p-j&export=download&authuser=0).
 
 
-- Folder organization: put datasets into ./data/datasets folder.
+- Folder organization: put datasets into ./data folder.
 
 ### 3. Run the Net
 
@@ -69,7 +69,7 @@ Test the Net:  python train.py
 ## 🖼️ Visualization Comparison
 
 <div align="center">
-<img width="800" alt="image" src="figures/com_pic.png?raw=true">
+<img width="800" alt="image" src="Test/figures/com_pic.png?raw=true">
 </div>
 
 <div align="center">
@@ -79,7 +79,7 @@ We compare our method against 14 methods. The red box indicates the area of inco
 ## ✨ Quantitative Comparison
 
 <div align="center">
-<img width="800" alt="image" src="figures/com_tab.png?raw=true">
+<img width="800" alt="image" src="Test/figures/com_tab.png?raw=true">
 </div>
 
 <div align="center">
@@ -89,7 +89,7 @@ Performance comparison with 14 methods on 5 datasets.
 ## ⭐ Statistical Significance
 
 <div align="center">
-<img width="800" alt="image" src="figures/com_ss.png?raw=true">
+<img width="800" alt="image" src="Test/figures/com_ss.png?raw=true">
 </div>
 
 <div align="center">
@@ -102,7 +102,7 @@ Paired t-test p-values comparing our method with other SOTAs.
 ## 🖼️ Visualization of Ablation Results
 
 <div align="center">
-<img width="800" alt="image" src="figures/aba.png?raw=true">
+<img width="800" alt="image" src="Test/figures/aba.png?raw=true">
 </div>
 
 <div align="center">
@@ -112,7 +112,7 @@ Ablation Visualization comparison. The red box indicates the area of incorrect p
 ## 🖼️ Convergence Analysis
 
 <div align="center">
-<img width="800" alt="image" src="figures/curve.png?raw=true">
+<img width="800" alt="image" src="Test/figures/curve.png?raw=true">
 </div>
 
 <div align="center">
