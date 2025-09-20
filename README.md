@@ -89,7 +89,7 @@ Performance comparison with 14 methods on 5 datasets.
 ## ⭐ Statistical Significance
 
 <div align="center">
-<img width="800" alt="image" src="Test/figures/com_ss.png?raw=true">
+<img width="200" alt="image" src="Test/figures/com_ss.png?raw=true">
 </div>
 
 <div align="center">
