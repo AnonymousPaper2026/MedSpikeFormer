@@ -1,10 +1,10 @@
 from utils.micro import *
 
 args={
-"datasets": Kvasir,
-"gpu": 1,
-"batchsize": 2,
-"imagesize": SIZE128,
+"datasets": Monu_Seg,
+"gpu": 6,
+"batchsize": 8,
+"imagesize": SIZE256,
 "log": "log",
 "seed": 41,
 "epoch": 400,
@@ -14,7 +14,7 @@ args={
 "lr": 0.0001,
 "ti": 0,
 "esp": 200,
-"checkpoint_pth": "/home/xyq1/MyFolder/Net_Seg_tj/log/ADSA_Kvasir/checkpoint.pth",
+"checkpoint_pth": "",
 "kernel_size": KERNEL3,
 "freeze":FREEZE_Y,
 "freeze_s":FREEZE_N,

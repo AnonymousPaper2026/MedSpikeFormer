@@ -12,19 +12,7 @@ from utils.micro import ISIC,Kvasir,Monu,COVID,BUSI,TEST,TRAIN
 from dataset.dataset import *
 def get_loader(datasets,batch_size,image_size,train_log_path):
     
-    if datasets==ISIC:
-        train_data=ISIC2018_Datasets(mode=TRAIN)
-        test_data=ISIC2018_Datasets(mode=TEST)
-    elif datasets==Kvasir:
-        train_data=Kvasir_Datasets(mode=TRAIN)
-        test_data=Kvasir_Datasets(mode=TEST)
-    elif datasets==BUSI:
-        train_data=BUSI_Datasets(mode=TRAIN)
-        test_data=BUSI_Datasets(mode=TEST) 
-    elif datasets==COVID: 
-        train_data=COVID_19_Datasets(mode=TRAIN)
-        test_data=COVID_19_Datasets(mode=TEST)
-    elif datasets==Monu:
+    if datasets==Monu:
         train_data=Monu_Seg_Datasets(mode=TRAIN)
         test_data=Monu_Seg_Datasets(mode=TEST)
     
@@ -32,7 +20,9 @@ def get_loader(datasets,batch_size,image_size,train_log_path):
     (valid_x, valid_y) = test_data.get_data()
     
     train_x, train_y = shuffling(train_x, train_y)
+    
     data_str = f"Dataset Size:\nTrain: {len(train_x)} - Valid: {len(valid_x)}\n"
+    
     print_and_save(train_log_path, data_str)
 
     train_dataset = DATASET(train_x, train_y, (image_size, image_size), transform=get_transform())

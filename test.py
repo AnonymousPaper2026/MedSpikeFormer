@@ -20,7 +20,7 @@ import json
 from utils.micro import *
 from utils.factory import *
 
-def load_config(config_path):
+def load_config():
     from config.config import args
     return args
 
@@ -159,8 +159,10 @@ class SegTrainer:
         data_str += f"\t Val. Loss: {valid_loss:.4f} - miou:{valid_metrics[0]},dsc:{valid_metrics[1]},acc:{valid_metrics[2]},sen:{valid_metrics[3]},spe:{valid_metrics[4]},pre:{valid_metrics[5]},rec:{valid_metrics[6]},fb:{valid_metrics[7]},em:{valid_metrics[8]}\n"
         self.print_and_save_log(data_str)
 
+
+
 if __name__ == "__main__":
-    args = load_config('config/config.json')
+    args = load_config()
     my_seeding(args['seed'])
     
     seg_trainer = SegTrainer(args)

@@ -1,6 +1,4 @@
 import os
-import sys
-sys.path.append(os.getcwd())
 import time
 import datetime
 import torch
@@ -20,7 +18,7 @@ from utils.run_train_vail import Trainer
 import json
 from utils.micro import *
 
-def load_config(config_path):
+def load_config(config_path=None):
     from config.config import args
     return args
 
@@ -175,7 +173,7 @@ class SegTrainer:
         self.print_and_save_log(data_str)
 
 if __name__ == "__main__":
-    args = load_config('config/config.json')
+    args = load_config()
     my_seeding(args['seed'])
     
     seg_trainer = SegTrainer(args)
