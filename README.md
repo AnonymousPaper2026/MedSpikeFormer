@@ -96,7 +96,6 @@ Paired t-test p-values comparing our method with other SOTAs.
 </div>
 
 
-# ⭐ Rebuttal
 
 ## 🖼️ Visualization of Ablation Results
 
