@@ -15,7 +15,7 @@ Spiking self-attention (SSA) has emerged as a promising approach for medical ima
 ## 🚀 Introduction
 
 <div align="center">
-    <img width="400" alt="image" src="Test/figures/challenge.png?raw=true">
+    <img width="800" alt="image" src="Test/figures/challenge.png?raw=true">
 </div>
 
 The challenges: the misleading co-occurrence of salient and non-salient objects. SA is ANN-based self-attention and SSA denotes spike self-attention.
