@@ -2,19 +2,19 @@ from utils.micro import *
 
 args={
 "datasets": Monu_Seg,
-"gpu": 6,
-"batchsize": 8,
+"gpu": GPU.GPU6,
+"batchsize": BATCHSIZE8,
 "imagesize": SIZE256,
 "log": "log",
-"seed": 41,
-"epoch": 400,
-"in_channels": 3,
-"embedding_dim": [32, 64, 128, 256],
-"time": 4,
-"lr": 0.0001,
-"ti": 0,
-"esp": 200,
-"checkpoint_pth": "",
+"seed": SEED,
+"epoch": EPOCH,
+"in_channels": INCHANNELRGB,
+"embedding_dim": EMBEDDINGDIM.EMBEDDING_DIM_MIDDLE,
+"time": TIMESTEP,
+"lr": LR,
+"ti": TI,
+"esp": ESP,
+"checkpoint_pth": CHECKPONITPATH,
 "kernel_size": KERNEL3,
 "freeze":FREEZE_Y,
 "freeze_s":FREEZE_N,
@@ -28,7 +28,6 @@ args={
 "model_type_s":SPIKE_MODEL,
 "model_type_a":ANN_MODEL,
 "weight_init_mode":INIT_KAIMING,
-"bn_init_mode":BN_INIT_DEFAULT
+"bn_init_mode":BN_INIT_DEFAULT,
+"proportion":DATASET_PROPORTION
 }
-
-

@@ -1,3 +1,5 @@
+from enum import IntEnum
+
 ISIC=1
 Kvasir=2
 Monu=3
@@ -35,3 +37,28 @@ BN_INIT_ZEROS = 'zeros'
 BN_INIT_SMALL = 'small'
 BN_INIT_RANDOM = 'random'
 BN_INIT_UNIFORM = 'uniform_bn'
+CHECKPONITPATH = ""
+DATASET_PROPORTION = 0.8
+class GPU(IntEnum):
+    GPU0 = 0
+    GPU1 = 1
+    GPU2 = 2
+    GPU3 = 3
+    GPU4 = 4
+    GPU5 = 5
+BATCHSIZE2 = 2
+BATCHSIZE4 = 4
+BATCHSIZE8 = 8
+BATCHSIZE16 = 16
+SEED = 41
+EPOCH = 200
+INCHANNELG = 1
+INCHANNELG2 = 2
+INCHANNELRGB = 3
+class EMBEDDINGDIM(IntEnum):
+    EMBEDDING_DIM_SMALL = [16, 32, 64, 128]
+    EMBEDDING_DIM_MIDDLE = [32, 64, 128, 256]
+    EMBEDDING_DIM_BIG = [64, 128, 256, 512]
+TIMESTEP = 4
+LR = 0.0001
+TI = 0

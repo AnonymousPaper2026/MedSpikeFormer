@@ -33,7 +33,7 @@ class SegTrainer:
         self.setup_loss_functions()
         self.setup_trainer()
         self.initialize_training_variables()
-        
+ 
     def setup_directories(self):
         current_time = datetime.datetime.now().strftime("%Y%m%d-%H%M%S")
         folder_name = f"{self.args['datasets']}_{current_time}"

@@ -43,5 +43,3 @@ def get_loader(datasets,batch_size,image_size,train_log_path):
     )
     
     return train_loader,valid_loader
-
-

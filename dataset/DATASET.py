@@ -6,7 +6,6 @@ from torch.utils.data import Dataset, DataLoader
 import cv2
 
 
-
 class DATASET(Dataset):
     def __init__(self, images_path, masks_path, size, transform=None):
         super().__init__()

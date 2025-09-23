@@ -5,20 +5,20 @@ import numpy as np
 from PIL import Image
 
 
-    
 from utils.micro import *
 
 
 import tifffile as tiff
 class Monu_Seg_Datasets(Dataset):
-    def __init__(self,mode):
+    def __init__(self,mode,proportion):
         super().__init__()
-        cwd='/home/xyq1/Datasets'
+        cwd=os.getcwd()
         self.mode=mode
+        middle_path=os.path.join('data','Monu_Seg','archive')
+        
+        gts_path=os.path.join(cwd,middle_path,'kmms_test','mask')
+        images_path=os.path.join(cwd,middle_path,'kmms_test','image')
 
-        gts_path=os.path.join(cwd,'data','Monu_Seg','archive','kmms_test','kmms_test','masks')
-        images_path=os.path.join(cwd,'data','Monu_Seg','archive','kmms_test','kmms_test','images')
-     
         images_list=sorted(os.listdir(images_path))
         images_list = [item for item in images_list if "png" in item]
         gts_list=sorted(os.listdir(gts_path))
@@ -30,8 +30,8 @@ class Monu_Seg_Datasets(Dataset):
             mask_path=os.path.join(gts_path,gts_list[i])
             self.data.append([image_path, mask_path])
         
-        gts_path_=os.path.join(cwd,'data','Monu_Seg','archive','kmms_training','kmms_training','masks')
-        images_path_=os.path.join(cwd,'data','Monu_Seg','archive','kmms_training','kmms_training','images')
+        gts_path_=os.path.join(cwd,middle_path,'kmms_training','mask')
+        images_path_=os.path.join(cwd,middle_path,'kmms_training','image')
         
         images_list_=sorted(os.listdir(images_path_))
         images_list_ = [item for item in images_list_ if "tif" in item]
@@ -45,10 +45,9 @@ class Monu_Seg_Datasets(Dataset):
         
         random.shuffle(self.data)
         if mode==TRAIN:
-            self.data=self.data[:59]
+            self.data=self.data[:int(proportion*len(self.data))]
         elif mode==TEST:
-            self.data=self.data[59:74]
-        print(len(self.data))
+            self.data=self.data[int(proportion*len(self.data)):len(self.data)]
 
     def get_data(self):
         images = [item[0] for item in self.data]
