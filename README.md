@@ -15,7 +15,7 @@ Spiking self-attention (SSA) has emerged as a promising approach for medical ima
 ## 🚀 Introduction
 
 <div align="center">
-    <img width="400" alt="image" src="Test/figures/challenge.png?raw=true">
+    <img width="800" alt="image" src="Test/figures/challenge.png?raw=true">
 </div>
 
 The challenges: the misleading co-occurrence of salient and non-salient objects. SA is ANN-based self-attention and SSA denotes spike self-attention.
@@ -81,15 +81,13 @@ Performance comparison with 14 methods on 5 datasets.
 ## ⭐ Statistical Significance
 
 <div align="center">
-<img width="800" alt="image" src="Test/figures/com_ss.png?raw=true">
+<img width="200" alt="image" src="Test/figures/com_ss.png?raw=true">
 </div>
 
 <div align="center">
 Paired t-test p-values comparing our method with other SOTAs.
 </div>
 
-
-# ⭐ Rebuttal
 
 ## 🖼️ Visualization of Ablation Results
 
