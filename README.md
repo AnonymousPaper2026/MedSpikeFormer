@@ -23,7 +23,7 @@ The challenges: the misleading co-occurrence of salient and non-salient objects.
 ## 📻 Overview
 
 <div align="center">
-<img width="800" alt="image" src="Test/figures/network1.png?raw=true">
+<img width="800" alt="image" src="Test/figures/network.png?raw=true">
 </div>
 
 Illustration of the overall architecture.
