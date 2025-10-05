@@ -4,7 +4,7 @@
 
 ## 🎈 News
 
-[2025.9.20] Training and testing code released.
+Training and testing code released.
 
 
 
