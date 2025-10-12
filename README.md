@@ -48,15 +48,11 @@ See requirements
 ### 3. Run the Net
 
 ```
-Enter the folder networks/tools/run
-
 Train the Net:  python train.py
 ```
 
 ```
-Enter the folder networks/tools/run
-
-Test the Net:  python train.py
+Test the Net:  python test.py
 ```
 
 ## 🖼️ Visualization Comparison
